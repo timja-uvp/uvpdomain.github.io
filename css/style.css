@@ -1,0 +1,271 @@
+:root {
+  --bg: #0a0b0d;
+  --panel: #12151a;
+  --text: #f3f5f7;
+  --muted: #9aa3ad;
+  --line: #242a31;
+  --delta: #3b82f6;
+  --tract: #d7d7d7;
+  --beta: #f59e0b;
+  --max: 1120px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: inherit; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--max));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(10, 11, 13, .92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: .95rem;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+.hero {
+  min-height: 70vh;
+  display: grid;
+  align-items: center;
+  padding: 90px 0 70px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: .8rem;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(3.2rem, 9vw, 7.8rem);
+  line-height: .92;
+  letter-spacing: -.055em;
+  margin: 0 0 24px;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -.04em;
+  margin: 0 0 18px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+.lead {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+  background: var(--panel);
+}
+
+.button:hover {
+  border-color: #555f6b;
+}
+
+.button.primary {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+.section {
+  padding: 80px 0;
+  border-top: 1px solid var(--line);
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px;
+  background: linear-gradient(145deg, #12151a, #0d0f12);
+}
+
+.card p { color: var(--muted); }
+
+.card.delta { border-top: 4px solid var(--delta); }
+.card.tract { border-top: 4px solid var(--tract); }
+.card.beta { border-top: 4px solid var(--beta); }
+
+.card a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.release-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.release {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.artwork-placeholder {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  background: #171b20;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .72rem;
+  text-align: center;
+  padding: 8px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.page-hero {
+  padding: 90px 0 60px;
+}
+
+.page-hero h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+.accent-delta { color: var(--delta); }
+.accent-tract { color: var(--tract); }
+.accent-beta { color: var(--beta); }
+
+.notice {
+  border-left: 3px solid var(--delta);
+  background: var(--panel);
+  padding: 18px 20px;
+  color: var(--muted);
+}
+
+footer {
+  padding: 36px 0 56px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    align-items: flex-start;
+    padding: 18px 0;
+    flex-direction: column;
+  }
+
+  nav { gap: 14px; }
+
+  .hero { min-height: auto; }
+
+  .grid.three,
+  .grid.two {
+    grid-template-columns: 1fr;
+  }
+
+  .release {
+    grid-template-columns: 70px 1fr;
+  }
+
+  .release .button {
+    grid-column: 1 / -1;
+  }
+}
