@@ -13,10 +13,10 @@
       rgba(7, 10, 13, 0.18) 70%,
       rgba(7, 10, 13, 0.08) 100%
     ),
-    url("images/uvpdomain-action-at-a-distance.png");
+    url("/images/uvpdomain-action-at-a-distance.png");
 
   background-size: cover;
-  background-position: center center;
+  background-position: 58% center;
   background-repeat: no-repeat;
 
   border-bottom: 1px solid var(--line);
@@ -25,7 +25,6 @@
 .hero .container {
   position: relative;
   z-index: 1;
-  width: 100%;
 }
 
 .hero .lead {
