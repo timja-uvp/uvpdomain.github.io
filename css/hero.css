@@ -16,7 +16,7 @@
     url("images/uvpdomain-action-at-a-distance.png");
 
   background-size: cover;
-  background-position: 58% center;
+  background-position: center center;
   background-repeat: no-repeat;
 
   border-bottom: 1px solid var(--line);
