@@ -296,6 +296,82 @@ footer {
   font-size: 1.25rem;
 }
 
+/* UVPVerse document */
+
+.verse-document {
+  background: var(--bg);
+}
+
+.verse-paper {
+  background: #e9e2d5;
+  color: #191817;
+  padding: 80px 20px 100px;
+}
+
+.verse-paper-inner {
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
+.verse-back {
+  display: inline-block;
+  margin-bottom: 80px;
+  color: #68625b;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.verse-back:hover {
+  color: #191817;
+}
+
+.lyric-header {
+  padding-bottom: 44px;
+  border-bottom: 1px solid rgba(25, 24, 23, .18);
+}
+
+.lyric-header .eyebrow {
+  color: #746e66;
+}
+
+.lyric-header h1 {
+  color: #191817;
+  font-size: clamp(3.2rem, 8vw, 6rem);
+  margin-bottom: 0;
+}
+
+.lyrics {
+  max-width: 620px;
+  padding: 64px 0 80px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.08rem, 1.8vw, 1.25rem);
+  line-height: 1.85;
+}
+
+.lyrics p {
+  margin: 0 0 3.2em;
+}
+
+.lyrics p:last-child {
+  margin-bottom: 0;
+}
+
+.lyric-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(25, 24, 23, .18);
+  color: #746e66;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+.verse-related {
+  padding: 80px 0;
+}
+
 @media (max-width: 1000px) {
   .grid.four {
     grid-template-columns: repeat(2, minmax(0, 1fr));
