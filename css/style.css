@@ -159,11 +159,10 @@ h3 {
 }
 
 .grid.four .card h2 {
-  font-size: clamp(1.8rem, 3vw, 2.8rem);
-}
-
-.grid.four .card {
-  padding: 28px 28px 30px;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -.04em;
+  white-space: nowrap;
 }
 
 .grid.three {
