@@ -158,6 +158,14 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid.four .card h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
+.grid.four .card {
+  padding: 28px 28px 30px;
+}
+
 .grid.three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
