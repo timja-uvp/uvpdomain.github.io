@@ -340,6 +340,21 @@ footer {
   margin-bottom: 0;
 }
 
+.lyric-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(25, 24, 23, .18);
+  color: #746e66;
+  font-size: .8rem;
+  letter-spacing: .08em;
+}
+
+.lyric-footer span:last-child {
+  text-align: right;
+}
+
 /* Annotated lyrics */
 
 .annotated-lyrics {
