@@ -252,6 +252,43 @@ footer {
   flex-wrap: wrap;
 }
 
+/* UVPVerse */
+
+.verse-list {
+  border-top: 1px solid var(--line);
+  margin-top: 28px;
+}
+
+.verse-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 24px 4px;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  transition: padding .2s ease, background .2s ease;
+}
+
+.verse-entry:hover {
+  padding-left: 14px;
+}
+
+.verse-entry h3 {
+  margin: 0 0 3px;
+  font-size: 1.3rem;
+}
+
+.verse-entry span {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.verse-entry .verse-arrow {
+  color: var(--verse);
+  font-size: 1.25rem;
+}
+
 @media (max-width: 1000px) {
   .grid.four {
     grid-template-columns: repeat(2, minmax(0, 1fr));
