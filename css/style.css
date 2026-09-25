@@ -7,6 +7,7 @@
   --delta: #3b82f6;
   --tract: #d7d7d7;
   --beta: #f59e0b;
+  --verse: #d8cbb8;
   --max: 1120px;
 }
 
@@ -153,6 +154,10 @@ h3 {
   gap: 20px;
 }
 
+.grid.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid.three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -173,6 +178,7 @@ h3 {
 .card.delta { border-top: 4px solid var(--delta); }
 .card.tract { border-top: 4px solid var(--tract); }
 .card.beta { border-top: 4px solid var(--beta); }
+.card.verse { border-top: 4px solid var(--verse); }
 
 .card a {
   text-decoration: none;
@@ -223,6 +229,7 @@ h3 {
 .accent-delta { color: var(--delta); }
 .accent-tract { color: var(--tract); }
 .accent-beta { color: var(--beta); }
+.accent-verse { color: var(--verse); }
 
 .notice {
   border-left: 3px solid var(--delta);
@@ -245,6 +252,12 @@ footer {
   flex-wrap: wrap;
 }
 
+@media (max-width: 1000px) {
+  .grid.four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 760px) {
   .header-inner {
     align-items: flex-start;
@@ -256,6 +269,7 @@ footer {
 
   .hero { min-height: auto; }
 
+  .grid.four,
   .grid.three,
   .grid.two {
     grid-template-columns: 1fr;
