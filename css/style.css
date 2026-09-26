@@ -301,29 +301,29 @@ footer {
 }
 
 .verse-intro {
-  max-width: 700px;
-  margin-top: 2.5rem;
+  max-width: 850px;
+  margin-top: 2rem;
 }
 
 .verse-intro .lead {
   font-size: 1.35rem;
   line-height: 1.5;
   font-weight: 500;
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.5rem;
   color: #9fa5af;
   font-weight: 600;
 }
 
 .verse-intro p {
   font-size: 1.15rem;
-  line-height: 1.65;
-  margin: 0 0 1.5rem;
+  line-height: 1.55;
+  margin: 0 0 1.25rem;
   color: #c3c6cc;
   font-weight: 400;
 }
 
 .verse-intro .closing {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-weight: 500;
 }
 
