@@ -110,11 +110,13 @@
   color: #ded2bf;
 }
 
-
-/* Narrative */
+/* =========================
+   UVPVERSE NARRATIVE
+   ========================= */
 
 .verse-intro {
-  max-width: 850px;
+  width: 100%;
+  max-width: none;
 }
 
 .verse-intro .lead {
@@ -124,6 +126,9 @@
   line-height: 1.5;
   font-weight: 600;
   color: #a8adb6;
+
+  width: 100%;
+  max-width: none;
 }
 
 .verse-intro p {
@@ -133,10 +138,16 @@
   line-height: 1.55;
   font-weight: 400;
   color: #c5c8ce;
+
+  width: 100%;
+  max-width: none;
 }
 
 .verse-intro .closing {
   margin-top: 26px;
+
+  width: 100%;
+  max-width: none;
 }
 
 /* Mobile */
