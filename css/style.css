@@ -301,8 +301,8 @@ footer {
 }
 
 .verse-intro {
-  max-width: 1100px;
-  margin-top: 2rem;
+  width: 100%;
+  max-width: none;
 }
 
 .verse-intro .lead {
@@ -312,6 +312,7 @@ footer {
   margin: 0 0 1.5rem;
   color: #9fa5af;
   font-weight: 600;
+  max-width: 900px;
 }
 
 .verse-intro p {
@@ -320,11 +321,13 @@ footer {
   margin: 0 0 1.25rem;
   color: #c3c6cc;
   font-weight: 400;
+  max-width: 1200px;
 }
 
 .verse-intro .closing {
   margin-top: 1.5rem;
   font-weight: 500;
+  max-width: 1000px;
 }
 
 /* UVPVerse document */
