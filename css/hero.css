@@ -76,10 +76,12 @@
   position: relative;
   z-index: 1;
 
-  max-width: 1160px;
+  width: 100%;
+  max-width: 1320px;
   margin: 0 auto;
 
-  padding: 90px 0 70px;
+  padding: 90px 60px 70px;
+  box-sizing: border-box;
 }
 
 
@@ -156,6 +158,12 @@
       url("../images/uvpdomain-action-at-a-distance.png");
   }
 
+}
+
+@media (min-width: 1400px) {
+  .verse-hero-content {
+    max-width: 1440px;
+  }
 }
 
 @media (max-width: 768px) {
