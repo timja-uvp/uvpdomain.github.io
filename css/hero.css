@@ -45,9 +45,6 @@
   background: #090b0d;
 }
 
-
-/* Background artwork */
-
 .verse-hero-bg {
   position: absolute;
   inset: 0;
@@ -65,12 +62,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   opacity: 0.85;
 }
-
-
-/* Live content above image */
 
 .verse-hero-content {
   position: relative;
@@ -79,23 +72,15 @@
   padding-bottom: 70px;
 }
 
-
-/* WORDS / LYRICS */
-
 .verse-hero .eyebrow {
   margin-bottom: 20px;
-
   font-size: 13px;
   letter-spacing: 0.22em;
   color: #9fa5af;
 }
 
-
-/* UVPVerse */
-
 .verse-heading {
   margin: 0 0 28px;
-
   font-size: clamp(64px, 7vw, 102px);
   line-height: 0.95;
   letter-spacing: -0.045em;
@@ -105,13 +90,11 @@
   color: #ded2bf;
 }
 
-/* =========================
-   UVPVERSE NARRATIVE
-   ========================= */
+
+/* Narrative */
 
 .verse-intro {
   width: 100%;
-  max-width: none;
 }
 
 .verse-intro .lead {
@@ -120,25 +103,20 @@
   line-height: 1.5;
   font-weight: 600;
   color: #a8adb6;
-  width: 100%;
   max-width: none;
 }
 
-verse-intro p {
+.verse-intro p {
   margin: 0 0 18px;
   font-size: 17px;
   line-height: 1.55;
   font-weight: 400;
   color: #c5c8ce;
-  width: 100%;
   max-width: none;
 }
 
 .verse-intro .closing {
   margin-top: 26px;
-
-  width: 100%;
-  max-width: none;
 }
 
 /* Mobile */
