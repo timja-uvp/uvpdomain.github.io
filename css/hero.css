@@ -33,6 +33,109 @@
   max-width: 580px;
 }
 
+/* =========================
+   UVPVERSE HERO
+   ========================= */
+
+.verse-hero {
+  position: relative;
+  min-height: 570px;
+  overflow: hidden;
+  border-bottom: 1px solid #252a30;
+  background: #090b0d;
+}
+
+
+/* Background artwork */
+
+.verse-hero-bg {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(9, 11, 13, 0.96) 0%,
+      rgba(9, 11, 13, 0.88) 35%,
+      rgba(9, 11, 13, 0.60) 65%,
+      rgba(9, 11, 13, 0.35) 100%
+    ),
+    url("/assets/images/uvpverse-apophenia.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.85;
+}
+
+
+/* Live content above image */
+
+.verse-hero-content {
+  position: relative;
+  z-index: 1;
+
+  max-width: 1160px;
+  margin: 0 auto;
+
+  padding: 90px 0 70px;
+}
+
+
+/* WORDS / LYRICS */
+
+.verse-hero .eyebrow {
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: #9fa5af;
+}
+
+
+/* UVPVerse */
+
+.verse-heading {
+  margin: 0 0 28px;
+
+  font-size: clamp(64px, 7vw, 102px);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.verse-heading .verse-accent {
+  color: #ded2bf;
+}
+
+
+/* Narrative */
+
+.verse-intro {
+  max-width: 850px;
+}
+
+.verse-intro .lead {
+  margin: 0 0 24px;
+
+  font-size: 21px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #a8adb6;
+}
+
+.verse-intro p {
+  margin: 0 0 18px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #c5c8ce;
+}
+
+.verse-intro .closing {
+  margin-top: 26px;
+}
 
 /* Mobile */
 
@@ -53,4 +156,34 @@
       url("../images/uvpdomain-action-at-a-distance.png");
   }
 
+}
+
+@media (max-width: 768px) {
+
+  .verse-hero {
+    min-height: auto;
+  }
+
+  .verse-hero-content {
+    padding: 64px 24px 56px;
+  }
+
+  .verse-hero-bg {
+    background-position: 60% center;
+
+    background-image:
+      linear-gradient(
+        rgba(9, 11, 13, 0.88),
+        rgba(9, 11, 13, 0.88)
+      ),
+      url("/assets/images/uvpverse-apophenia.jpg");
+  }
+
+  .verse-intro {
+    max-width: 100%;
+  }
+
+  .verse-intro p {
+    font-size: 17px;
+  }
 }
