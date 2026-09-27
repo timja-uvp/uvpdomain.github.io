@@ -75,13 +75,8 @@
 .verse-hero-content {
   position: relative;
   z-index: 1;
-
-  width: 100%;
-  max-width: 1320px;
-  margin: 0 auto;
-
-  padding: 90px 60px 70px;
-  box-sizing: border-box;
+  padding-top: 80px;
+  padding-bottom: 70px;
 }
 
 
@@ -121,24 +116,20 @@
 
 .verse-intro .lead {
   margin: 0 0 24px;
-
   font-size: 21px;
   line-height: 1.5;
   font-weight: 600;
   color: #a8adb6;
-
   width: 100%;
   max-width: none;
 }
 
-.verse-intro p {
+verse-intro p {
   margin: 0 0 18px;
-
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.55;
   font-weight: 400;
   color: #c5c8ce;
-
   width: 100%;
   max-width: none;
 }
@@ -169,12 +160,6 @@
       url("../images/uvpdomain-action-at-a-distance.png");
   }
 
-}
-
-@media (min-width: 1400px) {
-  .verse-hero-content {
-    max-width: 1440px;
-  }
 }
 
 @media (max-width: 768px) {
