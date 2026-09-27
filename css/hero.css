@@ -60,7 +60,7 @@
       rgba(9, 11, 13, 0.60) 65%,
       rgba(9, 11, 13, 0.35) 100%
     ),
-    url("/assets/images/uvpverse-apophenia.jpg");
+    url("../images/uvpverse-apophenia.jpg");
 
   background-size: cover;
   background-position: center;
